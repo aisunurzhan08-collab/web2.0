@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>City Notes | Flexbox</title>
+  <link rel="stylesheet" href="styles/flex.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="City Notes home"><span class="logo-mark">CN.</span> City Notes</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a aria-current="page" href="index.html">Flexbox</a></li>
+        <li><a href="grid.html">Grid &amp; Gallery</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">Aisu Nurzhan / Layout study 01</p>
+      <h1 id="page-title">Small places, big stories.</h1>
+      <p>A collection of imagined city stops, arranged with Flexbox. Explore the cards, then visit the Grid gallery and portfolio.</p>
+    </section>
+
+    <section class="places" aria-labelledby="places-title">
+      <div class="section-heading"><h2 id="places-title">Three stops to explore</h2><span>01 — 03</span></div>
+      <div class="card-row">
+        <article class="place-card">
+          <img src="assets/scene-1.svg" alt="Terracotta buildings beneath a peach sun" width="800" height="600">
+          <div class="card-content"><span class="number">01 / Morning</span><h3>Sunrise Street</h3><p>A warm start between quiet rooftops and the first light of the day.</p><a class="card-button" href="grid.html#sunrise-street">See in gallery <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="place-card">
+          <img src="assets/scene-4.svg" alt="Blue river and a bridge between city buildings" width="800" height="600">
+          <div class="card-content"><span class="number">02 / Afternoon</span><h3>River Crossing</h3><p>A short walk over the bridge with a wide view of the water.</p><a class="card-button" href="grid.html#river-crossing">See in gallery <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="place-card">
+          <img src="assets/scene-8.svg" alt="Purple evening skyline with a bright moon" width="800" height="600">
+          <div class="card-content"><span class="number">03 / Evening</span><h3>After Dark</h3><p>A calmer side of the city, where windows glow after sunset.</p><a class="card-button" href="grid.html#after-dark">See in gallery <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer><span>City Notes · Aisu Nurzhan</span><a href="grid.html">Next: Grid &amp; Gallery →</a></footer>
+</body>
+</html>
