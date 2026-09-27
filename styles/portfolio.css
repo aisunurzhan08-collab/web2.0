@@ -1,0 +1,270 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #252324;
+    background: #f8f5ee;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: inherit;
+}
+
+.site-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 22px max(36px, calc((100vw - 1168px)/2));
+    border-bottom: 1px solid #ddd5ca;
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
+    letter-spacing: -.03em;
+}
+
+.logo-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #f06a4b;
+    color: #fff;
+    width: 42px;
+    height: 42px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: .9rem;
+    padding: 10px 0;
+}
+
+.nav-links a:hover, .nav-links a[aria-current] {
+    color: #cf4b34;
+    border-bottom: 2px solid #cf4b34;
+}
+
+main {
+    max-width: 1240px;
+    width: 100%;
+    margin: auto;
+    padding: 70px 36px 110px;
+    flex: 1;
+}
+
+.eyebrow, .aside-label {
+    font-size: .75rem;
+    letter-spacing: .17em;
+    font-weight: 700;
+    color: #b94f3a;
+    text-transform: uppercase;
+}
+
+.intro h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(3.5rem, 7vw, 6.7rem);
+    line-height: 1;
+    letter-spacing: -.065em;
+    margin: 20px 0;
+}
+
+.intro>p:last-child {
+    color: #625d58;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
+    align-items: start;
+    gap: 60px;
+    margin-top: 75px;
+}
+
+.projects h2 {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 22px;
+}
+
+.projects h2 span {
+    font-family: Arial, sans-serif;
+    font-size: .8rem;
+    color: #b94f3a;
+}
+
+.project-list {
+    display: grid;
+    gap: 14px;
+}
+
+.project-card {
+    display: flex;
+    gap: 28px;
+    background: #fff;
+    border: 1px solid #e6dfd5;
+    padding: 28px;
+}
+
+.project-number {
+    color: #b94f3a;
+    font-size: .8rem;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 164px;
+}
+
+.project-content h3 {
+    font-family: Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin: 0 0 12px;
+}
+
+.project-content p {
+    color: #625d58;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.project-content a {
+    margin-top: auto;
+    text-decoration: none;
+    font-size: .85rem;
+    font-weight: 700;
+    border-bottom: 1px solid #252324;
+    padding-bottom: 5px;
+}
+
+.project-content a:hover {
+    color: #b94f3a;
+    border-color: #b94f3a;
+}
+
+.about {
+    background: #eee8db;
+    padding: 34px;
+}
+
+.about h2 {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: 400;
+    margin: 18px 0;
+}
+
+.about p, .about li {
+    color: #625d58;
+    line-height: 1.65;
+}
+
+.divider {
+    border-top: 1px solid #c9bfb2;
+    margin: 28px 0;
+}
+
+.about h3 {
+    font-size: .9rem;
+}
+
+.about ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+footer {
+    background: #242629;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px max(36px, calc((100vw - 1168px)/2));
+    font-size: .86rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+:focus-visible {
+    outline: 3px solid #df6346;
+    outline-offset: 4px;
+}
+
+@media(max-width:800px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .about {
+        max-width: 600px;
+    }
+}
+
+@media(max-width:600px) {
+    .site-header {
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    .nav-links {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .nav-links a {
+        font-size: .78rem;
+    }
+    main {
+        padding: 55px 20px 75px;
+    }
+    .portfolio-grid {
+        margin-top: 55px;
+    }
+    .project-card {
+        padding: 20px;
+        gap: 16px;
+    }
+    .project-content {
+        min-height: 0;
+    }
+    footer {
+        padding: 28px 20px;
+        flex-wrap: wrap;
+    }
+}
