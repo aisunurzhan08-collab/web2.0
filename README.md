@@ -4,6 +4,10 @@
 
 A responsive three-page city-themed site built with plain HTML and CSS. All nine illustrations are stored locally in `assets/`.
 
+## Link to Github pages
+
+https://aisunurzhan08-collab.github.io/web2.0/
+
 ## Run locally
 
 Open `index.html` in a browser. Use the navigation links to visit the other pages. No installation or build step is needed.
